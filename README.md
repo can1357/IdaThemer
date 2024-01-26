@@ -26,7 +26,7 @@ You can find some of the most popular themes in the [themes](https://github.com/
 
 ## Building from source
 
-Make sure you have [Go > 1.21](https://golang.org/) installed on your system. Then run the following commands:
+Make sure you have [Go >= 1.21](https://golang.org/) installed on your system. Then run the following commands:
 
 ```bash
 git clone https://github.com/can1357/IdaThemer.git
