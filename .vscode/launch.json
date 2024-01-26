@@ -10,7 +10,7 @@
 			"request": "launch",
 			"mode": "debug",
 			"program": "${workspaceFolder}/main.go",
-			"args": ["gruvbox.json", "S:\\IDA Pro\\themes\\gruvbox"]
+			"args": ["*", "S:\\IDA Pro\\themes"]
 		}
 	]
 }

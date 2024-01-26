@@ -1,0 +1,402 @@
+@importtheme "dark";
+
+CustomIDAMemo {
+	qproperty-line-fg-default: #b2cacd;
+	qproperty-line-fg-regular-comment: #87a7ab;
+	qproperty-line-fg-repeatable-comment: #90aaad;
+	qproperty-line-fg-automatic-comment: #98acae;
+	qproperty-line-fg-insn: #b2cacd;
+	qproperty-line-fg-dummy-data-name: #c4d6d9;
+	qproperty-line-fg-regular-data-name: #c0cfd0;
+	qproperty-line-fg-demangled-name: #e34e1c;
+	qproperty-line-fg-punctuation: #b2cacd;
+	qproperty-line-fg-charlit-in-insn: #85f1ff;
+	qproperty-line-fg-strlit-in-insn: #85f1ff;
+	qproperty-line-fg-numlit-in-insn: #f05723;
+	qproperty-line-fg-void-opnd: #e34e1c;
+	qproperty-line-fg-code-xref: #169fb1;
+	qproperty-line-fg-data-xref: #85f1ff;
+	qproperty-line-fg-code-xref-to-tail: #f05723;
+	qproperty-line-fg-data-xref-to-tail: #85f1ff;
+	qproperty-line-fg-error: #e34e1c;
+	qproperty-line-fg-line-prefix: #b2cacd;
+	qproperty-line-fg-opcode-byte: #b2cacd;
+	qproperty-line-fg-extra-line: #e58eab;
+	qproperty-line-fg-alt-opnd: #e693af;
+	qproperty-line-fg-hidden: #eba858;
+	qproperty-line-fg-libfunc: #169fb1;
+	qproperty-line-fg-locvar: #ec8962;
+	qproperty-line-fg-dummy-code-name: #eba858;
+	qproperty-line-fg-asm-directive: #b2936b;
+	qproperty-line-fg-macro: #5fdcec;
+	qproperty-line-fg-strlit-in-data: #a88457;
+	qproperty-line-fg-charlit-in-data: #a88457;
+	qproperty-line-fg-numlit-in-data: #ec5522;
+	qproperty-line-fg-keyword: #b2cacd;
+	qproperty-line-fg-register-name: #169fb1;
+	qproperty-line-fg-import-name: #eaa3bb;
+	qproperty-line-fg-segment-name: #e7993b;
+	qproperty-line-fg-dummy-unknown-name: #77eebc;
+	qproperty-line-fg-code-name: #b2936b;
+	qproperty-line-fg-unknown-name: #e693af;
+	qproperty-line-fg-collapsed-line: #eba858;
+	qproperty-line-pfx-libfunc: #169fb1;
+	qproperty-line-pfx-func: #1699aa;
+	qproperty-line-pfx-insn: #16a9bd;
+	qproperty-line-pfx-data: #75ebfb;
+	qproperty-line-pfx-unexplored: #ed5522;
+	qproperty-line-pfx-extern: #eaa4bc;
+	qproperty-line-pfx-current-item: #ed5522;
+	qproperty-line-pfx-current-line: #eaa4bc;
+	qproperty-line-bg-dbg-ip: #aea4f9;
+	qproperty-line-bg-dbg-ip-bpt-enabled: #ed5522;
+	qproperty-line-bg-dbg-ip-bpt-disabled: #aea4f9;
+	qproperty-line-bg-dbg: #052529;
+	qproperty-line-bg-dbg-bpt-enabled: #ed5522;
+	qproperty-line-bg-dbg-bpt-disabled: #75ebfb;
+	qproperty-line-bg-dbg-ip-bpt-unavailable: #aea4f9;
+	qproperty-line-bg-dbg-bpt-unavailable: #a88457;
+	qproperty-graph-bg-top: #052529;
+	qproperty-graph-bg-bottom: #073a42;
+	qproperty-graph-node-title-normal: #b2cacd;
+	qproperty-graph-node-title-selected: #a49af2;
+	qproperty-graph-node-title-current: #a49af2;
+	qproperty-graph-node-frame-group: #eba858;
+	qproperty-graph-node-shadow: #487e86;
+	qproperty-graph-node-high1: #45e7fb;
+	qproperty-graph-node-high2: #85e4f0;
+	qproperty-graph-node-foreign: #e34e1c;
+	qproperty-graph-edge-normal: #17aec2;
+	qproperty-graph-edge-yes: #85f1ff;
+	qproperty-graph-edge-no: #ed5522;
+	qproperty-graph-edge-high: #073940;
+	qproperty-graph-edge-current: #0e6671;
+	qproperty-line-fg-patched-bytes: #f34d15;
+	qproperty-line-fg-unsaved-changes: #a88457;
+	qproperty-line-bg-highlight: #0e6671;
+	qproperty-line-bg-hint: #052428;
+
+	qproperty-line-fg-default: #93b8bd;
+	qproperty-line-bg-default: #052529;
+	qproperty-line-pfx-current-item: #a88457;
+	qproperty-line-pfx-current-line: #a88457;
+	qproperty-line-bg-bpt-enabled: #ed5522;
+	qproperty-line-bg-bpt-disabled: #85f1ff;
+}
+
+/* search filter */
+TChooser {
+	qproperty-highlight-bg-default: #0e6671;
+	qproperty-highlight-bg-selected: #0e6671;
+}
+
+MainMsgList {
+	color: #b2cacd;
+	background-color: #052529;
+}
+
+TCpuRegs {
+	qproperty-register-defined: #c1d4d7;
+	qproperty-register-changed: #1bbace;
+	qproperty-register-edited: #68deee;
+}
+
+TCpuRegs ui_label_t {
+	color: #98acae;
+}
+
+TextArrows {
+	qproperty-jump-in-function: #96e7f2;
+	qproperty-jump-external-to-function: #16a9bd;
+	qproperty-jump-under-cursor: #a88457;
+	qproperty-jump-target: #85f1ff;
+	qproperty-register-target: #0e6671;
+}
+
+navband_t {
+	qproperty-lib-function: #169fb1;
+	qproperty-function: #137c8a;
+	qproperty-code: #16a9bd;
+	qproperty-data: #85f1ff;
+	qproperty-undefined: #406e76;
+	qproperty-extern: #f1bacd;
+	qproperty-error: #ed5522;
+	qproperty-gap: #87a7ab;
+	qproperty-cursor: #85f1ff;
+	qproperty-auto-analysis-cursor: #a88457;
+}
+
+CustomIDAMemo[debugging="true"] {
+	qproperty-line-fg-default: #b2cacd;
+	qproperty-line-bg-default: #052529;
+	qproperty-line-pfx-current-item: #a88457;
+	qproperty-line-pfx-current-line: #003940;
+	qproperty-line-bg-bpt-enabled: #ed5522;
+	qproperty-line-bg-bpt-disabled: #85f1ff;
+}
+
+CustomIDAMemo[hints="true"] {
+	qproperty-line-fg-default: #b2cacd;
+	qproperty-line-bg-default: #052529;
+	qproperty-line-pfx-current-item: #a88457;
+	qproperty-line-pfx-current-line: #a88457;
+	qproperty-line-bg-bpt-enabled: #ed5522;
+	qproperty-line-bg-bpt-disabled: #85f1ff;
+}
+
+QWidget {
+	background-color: #052529;
+	color: #b2cacd;
+}
+
+QCheckBox {
+	background-color: #ffffff;
+}
+
+QTextEdit,
+QPlainTextEdit {
+	background-color: #052529;
+	border: 1px solid #052529;
+	border-radius: 2px;
+}
+
+QMenu {
+	border: 1px solid #052529;
+	border-radius: 3px;
+}
+
+QMenuBar,
+QMenuBar::item {
+	background-color: #052529;
+	color: #b2cacd;
+}
+
+QMenu::item:selected {
+	background-color: #003f4b;
+}
+
+QMenu::item:disabled {
+	color: #003c49;
+}
+
+/* qTabBar */
+QTabBar::tab {
+	background-color: #052529;
+	border-radius: 3px;
+	padding: 4px;
+}
+
+QTabBar::tab:selected {
+	background-color: #052327;
+	border-radius: 3px;
+}
+
+QTableView {
+	border: 1px solid #42737b;
+	background-color: #052225;
+	border-radius: 3px;
+}
+
+/* QHeaderView */
+QHeaderView::section {
+	background-color: #052529;
+	border: none;
+	border-left: 1px solid #97e8f2;
+	border-right: 1px solid #97e8f2;
+	padding: 3px;
+}
+
+QHeaderView:horizontal::section {
+	min-height: 20px;
+}
+
+QHeaderView:vertical::section {
+}
+
+/* TableCornerButton */
+QTableCornerButton::section {
+	background: #052225;
+	border: 2px outset #97e8f2;
+}
+
+/* QLineEdit*/
+QLineEdit {
+	border: 1px solid #052529;
+	min-height: 20px;
+	border-radius: 2px;
+}
+
+QLineEdit:hover,
+QLineEdit:focus {
+	border: 1px solid #97e8f2;
+}
+
+/* SCROLLBAR */
+QScrollBar {
+	background-color: #05262a;
+	width: 20px;
+	height: 20px;
+	margin: 0 0 0 0;
+}
+
+QScrollBar::sub-line,
+QScrollBar::add-line {
+	width: 0;
+	height: 0;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+	background: none;
+}
+
+QScrollBar::handle:vertical {
+	min-height: 20px;
+}
+
+QScrollBar::handle:horizontal {
+	min-width: 20px;
+}
+
+QScrollBar::handle {
+	background-color: #0c5760;
+	margin: 3px;
+	border-radius: 7px;
+}
+
+/* Toolbar */
+QToolBar {
+	border-radius: 5px;
+	border: none;
+}
+
+/* PUSH BUTTON */
+QPushButton {
+	border: 1px solid #28cde3;
+	text-align: center;
+	min-height: 20px;
+	min-width: 50px;
+	padding: 0 6px 0 6px;
+	border-radius: 2px;
+}
+
+QPushButton:hover,
+QPushButton:default {
+	border: 1px solid #0c5760;
+}
+
+QPushButton:pressed {
+	border: 1px solid #0c5760;
+}
+
+/* OTHER */
+TNavBand > QPushButton,
+nav_scroll_button_t,
+RegJumpButton {
+	min-height: 0;
+	min-width: 0;
+	padding: 0;
+	border: none;
+}
+
+DockWidgetTitle,
+DockAreaDragTitle {
+	border: none;
+}
+
+DockWidgetTitle[active="true"] {
+	background-color: #05262a;
+}
+
+DockAreaDragTitle {
+	background-color: #05262a;
+}
+
+/* ComboBox */
+
+QComboBox {
+	border: 1px solid #05262a;
+	border-radius: 2px;
+	color: #b2cacd;
+}
+
+QComboBox > QLineEdit,
+QComboBox > QLineEdit:hover,
+QComboBox > QLineEdit:focus {
+	border: none;
+	min-height: default;
+}
+
+QComboBox:hover,
+QComboBox:focus {
+	border: 1px solid #97e8f2;
+}
+
+QComboBox::drop-down {
+	width: 15px;
+
+	border-left-width: 1px;
+	border-left-color: #97e8f2;
+	border-left-style: solid;
+}
+
+/* The 'menu' of a QComboBox */
+QComboBox QAbstractItemView {
+	border: 1px solid #97e8f2;
+}
+
+/* Labels */
+QRadioButton,
+QLabel,
+QCheckBox {
+	background: transparent;
+}
+
+/* StatusBar */
+QStatusBar QLabel {
+	border: none;
+}
+
+QStatusBar::item {
+	border: 1px solid #97e8f2;
+	border-radius: 2px;
+}
+
+/* Group */
+EditContainer,
+ChooserContainer,
+QGroupBox,
+QListView,
+QTreeView {
+	border: 1px solid #97e8f2;
+	border-radius: 2px;
+}
+
+QGroupBox {
+	margin-top: 5px;
+}
+
+QGroupBox::title {
+	subcontrol-origin: margin;
+	subcontrol-position: top left;
+	left: 7px;
+	padding: 0px 4px 0px 6px;
+}
+
+/* Tip */
+QToolTip,
+QTipLabel {
+	border: 1px solid #97e8f2;
+	border-radius: 2px;
+	background: #05262a;
+	color: #b2cacd;
+	margin: 0;
+	padding: 0;
+}
+
+QTreeView::item:selected,
+QListView::item:selected,
+QTableView::item:selected {
+	background-color: #05262a;
+	color: #cbdbde;
+}
